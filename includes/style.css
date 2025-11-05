@@ -1,0 +1,929 @@
+:root {
+    --offwhite: rgba(240, 237, 231, 0.30);
+    --border-round: 8px;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --tan: rgba(240, 237, 231, 0.90);
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 600px;
+}
+
+.center-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.center-form .notifications-container {
+    width: auto;
+    padding: 1em;
+}
+
+.flex-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-container {
+    box-shadow: var(--shadow)
+}
+
+.show-table {
+    max-width: 700px;
+    width: 100%;
+}
+
+.show-table .table-default {
+    max-width: 700px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+.logo-font {
+    font-family: 'GFS Didot', serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.logo-name {
+    width: 180px !important;
+    /* Adjust the size of the image */
+    height: auto !important;
+    /* Maintain aspect ratio */
+    display: inline-block;
+    /* Allows width to be respected */
+    margin-left: 10px;
+    /* Small left margin */
+    margin-right: 10px;
+    /* Small right margin */
+}
+
+.summary .table-default {
+    width: auto;
+}
+
+.left-side {
+    background-color: rgba(240, 237, 231, 0.10);
+    padding: 10px;
+    margin-right: 10px;
+    min-width: 300px;
+    height: 95vh;
+    overflow-y: scroll;
+}
+
+.left-inset-panel {
+    background-color: white;
+    padding: 10px;
+    margin-left: 10px;
+    max-width: 300px;
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.middle-side-main-body {
+    background-color: rgba(240, 237, 231, 0.10);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.middle-side-right-table {
+    background-color: white;
+    vertical-align: top;
+    padding: 10px;
+    min-width: 60% !important;
+    width: 60% !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.middle-side-right-table.table-default {
+    width: auto !important;
+}
+
+.expand-bar-1 {
+    width: 100%;
+    height: 25px;
+    background-color: rgba(240, 237, 231, 0.90);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.middle-side-inset {
+    background-color: var(--offwhite);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.middle-side-inset.submit-header {
+    padding: 0px;
+}
+
+.table-default {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    /*width: 700px;*/
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.outside-of-box .table-default {
+    width: 100%;
+}
+
+.table-default table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.table-default th,
+.table-default td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+nav {
+    background-color: lightblue;
+    /*padding: 10px;*/
+    display: flex;
+    align-items: center;
+    /* Align items vertically in the center */
+    justify-content: flex-start;
+    /* Align everything to the left */
+    font-weight: bold;
+    box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.1);
+    height: 5vh;
+    /* Add shadow along the bottom */
+    width: 100vw;
+}
+
+.logo {
+    display: flex;
+    /* Enables flexbox for the logo section */
+    align-items: center;
+    /* Vertically centers the logo and name */
+    margin-right: 30px;
+    margin-left: 20px;
+    /* Add the gap between logo and navigation */
+    min-width: 250px;
+}
+
+.logo a {
+    display: block;
+    /* Make sure the anchor tightly wraps the logo */
+}
+
+.logo img {
+    display: block;
+    height: 50px;
+    width: auto;
+}
+
+.header-links {
+    display: flex;
+    gap: 30px;
+    /* Ensure consistent spacing between navigation links */
+    align-items: center;
+    /* Ensure links are vertically aligned with the logo */
+}
+
+.header-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+}
+
+#triangle-usecase.rotate,
+#triangle-techstack.rotate,
+#triangle-product.rotate,
+#triangle-vendor.rotate {
+    transform: rotate(90deg);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data_table_subheader {
+    background-color: #f9f9f9;
+}
+
+.data-table th,
+.data-table td {
+    text-align: left;
+    /* Ensure table borders are clearly defined */
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+}
+
+.data-table1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data_table_subheader {
+    background-color: #f9f9f9;
+}
+
+.data-table1 th,
+.data-table1 td {
+    text-align: left;
+    /*border: 1px solid black;*/
+    /* Ensure table borders are clearly defined */
+}
+
+.data-table1 th {
+    background-color: #f2f2f2;
+}
+
+.uc-col-techstack {
+    width: 40%;
+    /* Techstack column width */
+}
+
+.uc-col-verified {
+    width: 10%;
+    /* Verified column width */
+}
+
+.uc-col-product-heading,
+.uc-col-vendor-heading {
+    width: 25%;
+    /* Product and Vendor columns width */
+}
+
+.tech-col-techstack {
+    width: 30%;
+    /* Techstack column width */
+}
+
+
+.tech-col-verified {
+    width: 10%;
+    /* Verified column width */
+}
+
+.tech-col-product,
+.tech-col-component,
+.tech-col-method {
+    width: 20%;
+    /* Product and Vendor columns width */
+}
+
+.prod-col-techstack {
+    width: 20%;
+    /* Techstack column width */
+}
+
+
+.prod-col-desc {
+    width: 60%;
+    /* Verified column width */
+}
+
+
+.prod-col-vendor {
+    width: 19%;
+    /* Product and Vendor columns width */
+}
+
+.vend-col-vendor {
+    width: 20%;
+    /* Techstack column width */
+}
+
+
+.vend-col-desc {
+    width: 30%;
+    /* Verified column width */
+}
+
+
+.vend-col-email {
+    width: 17%;
+    /* Product and Vendor columns width */
+}
+
+.vend-col-phone {
+    width: 17%;
+    /* Techstack column width */
+}
+
+
+.vend-col-website {
+    width: 17%;
+    /* Verified column width */
+}
+
+
+.font-bold {
+    font-weight: bold !important;
+}
+
+.font-not-bold {
+    text-decoration: line-through;
+}
+
+.parent-class {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.middle-side {
+    flex-grow: 1;
+    height: 95vh !important;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding: 10px;
+    /*border: 1px solid #ccc;*/
+    box-sizing: border-box;
+    /*background-color: rgba(240, 237, 231, 0.10);*/
+}
+
+.slider {
+    background-color: lightblue !important;
+}
+
+/*
+.right-side {
+    position: relative;
+    width: 15px;
+    background-color: lightblue;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}*/
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid black;
+    /* Points left initially */
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-250%) translateY(-4800%) rotate(90deg);
+    /* Initial state points left */
+    transition: transform 0.3s ease;
+}
+
+#triangle.rotate {
+    transform: translateX(-250%) translateY(-4800%) rotate(180deg);
+    /* Rotate 90 degrees to point down */
+}
+
+#triangle-container {
+    position: absolute;
+    top: 10px;
+    /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Hide containers by default */
+td[id^="container_"] {
+    display: none;
+}
+
+button {
+    line-height: 1;
+}
+
+button.active {
+    background-color: #333;
+    /* Remove this */
+    color: #fff;
+    /* Remove this */
+}
+
+button:hover {
+    background-color: #555;
+    /* Remove this */
+    color: #fff;
+    /* Remove this */
+}
+
+/* Center text in all table cells except the first column (Item Name) */
+.data-table td:not(:first-child),
+.data-table th:not(:first-child) {
+    text-align: center;
+}
+
+/* Ensure the first column (Item Name) is left-aligned */
+.data-table td:first-child {
+    text-align: left;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#inboxTable th,
+#inboxTable td,
+#outboxTable th,
+#outboxTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#inboxTable th,
+#outboxTable th {
+    background-color: #f2f2f2;
+}
+
+#inboxTable td,
+#outboxTable td {
+    text-align: left;
+}
+
+#group_buttons {
+    margin-bottom: 20px;
+}
+
+#group_buttons button {
+    padding: 10px 20px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    color: #333;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#group_buttons button.active {
+    background-color: #333;
+    color: #fff;
+}
+
+#inboxTable,
+#outboxTable {
+    display: none;
+}
+
+.notifications-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.notifications-color {
+    background-color: rgba(240, 237, 231, 0.10);
+    flex: 1;
+}
+
+.fill-remaining {
+    min-height: 100vh;
+    /* Ensure it fills at least the entire viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(240, 237, 231, 0.10);
+}
+
+.hidden {
+    display: none;
+}
+
+.toggle-button {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.indented {
+    margin-left: 20px;
+    /* Indent the second tier of toggle buttons */
+}
+
+.page-wrapper {
+    background-color: lightblue;
+    /* Apply light blue background */
+    padding: 20px;
+    /* Optional padding */
+}
+
+.shaded-box {
+    border-radius: var(--border-round);
+    box-shadow: var(--shadow);
+    padding: 1em;
+}
+
+.tabs {
+    position: relative;
+    /* margin: 2rem 0; */
+    background: white;
+    min-height: 260px;
+    /* Ensures a minimum height */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabs input {
+    display: none;
+}
+
+.tabs ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: flex-start;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabs ul li {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s ease;
+}
+
+.tabs ul li label {
+    display: block;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px 10px 0 0;
+    background: #f1f1f1;
+    background-color: var(--offwhite);
+}
+
+#tab1:checked~ul li:nth-of-type(1) {
+    background-color: var(--tan);
+}
+
+#tab2:checked~ul li:nth-of-type(2) {
+    background-color: var(--tan);
+}
+
+#tab3:checked~ul li:nth-of-type(3) {
+    background-color: var(--tan);
+}
+
+.tabs ul li:hover label {
+    background: var(--tan);
+}
+
+.tabs .slider {
+    position: absolute;
+    width: 33.33%;
+    height: 4px;
+    background: #007bff;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    border-radius: 0 0 10px 10px;
+}
+
+.tabs .content section {
+    display: none;
+    padding: 20px;
+}
+
+.tabs input:checked+label {
+    background: white;
+    color: #333;
+    border-bottom: 4px solid #007bff;
+}
+
+.tabs input:checked+label+.slider {
+    left: calc(33.33% * (var(--tab)));
+}
+
+#tab1:checked~.slider {
+    left: 0;
+}
+
+#tab2:checked~.slider {
+    left: 33.33%;
+}
+
+#tab3:checked~.slider {
+    left: 66.66%;
+}
+
+#tab1:checked~.content section:nth-of-type(1),
+#tab2:checked~.content section:nth-of-type(2),
+#tab3:checked~.content section:nth-of-type(3) {
+    display: block;
+}
+
+.container {
+    display: flex;
+    /* Align the boxes side-by-side */
+    justify-content: space-between;
+    /* Add space between the two boxes */
+}
+
+.even-container {
+    justify-content: space-around;
+}
+
+.box {
+    align-self: flex-start;
+}
+
+.left-box {
+    width: 50% !important;
+    padding: 0 !important;
+    /* box-shadow: var(--shadow);*/
+    border-radius: var(--border-round);
+    margin-top: 3em;
+    margin-left: 3em;
+    margin-right: 1.5em;
+    margin-bottom: 3em;
+    /* Adjust the width of the left container 
+    padding-left: 20px;
+    padding-right: 10px;
+    /* Optional padding on the right for spacing */
+}
+
+.right-box {
+    width: 50% !important;
+    border-radius: 10px 10px 0 0;
+    margin-top: 3em;
+    margin-right: 3em;
+    margin-left: 1.5em;
+    margin-bottom: 3em;
+    /* Adjust the width of the right container 
+    padding-right: 20px;
+    padding-left: 10px;
+    /* Add padding to the right side */
+}
+
+img {
+    max-width: 100%;
+    /* Ensure images fit within their container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.container {
+    display: flex;
+}
+
+.main-content {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 48%;
+}
+
+.container .notifications-container {
+    box-shadow: none;
+}
+
+.profile-image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.table-container {
+    width: 48%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+    /*border: 1px solid black;*/
+    padding: 8px;
+    text-align: left;
+}
+
+#mainForm .data-table td {
+    text-align: left;
+}
+
+#mainForm .data-table td:last-of-type {
+    text-align: center;
+}
+
+.main-div {
+    padding: 10px;
+}
+
+.outside-of-box {
+    background-color: white;
+}
+
+.class-titles {
+    margin: 5px;
+    font-weight: bold;
+    background-color: #E9E9E9;
+    padding: 5px;
+}
+
+.box-titles {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+}
+
+.box-areas {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.box-areas select,
+.box-areas input {
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.box {
+    width: 99%;
+    padding-left: 5px;
+}
+
+.box-subtext {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.alt-label {
+    vertical-align: top;
+    background-color: lightblue;
+}
+
+.text-input {
+    width: 95%;
+}
+
+.indented-text {
+    text-indent: 4%;
+}
+
+/* Style for the scrollable lists container */
+.scrollable-lists-container {
+    display: flex;
+    /* Use flexbox for layout */
+    margin: 20px auto;
+    /* Add margin (top and bottom) and set left and right margins to auto */
+    padding: 10px;
+    /* Add padding */
+    width: 95%;
+    /* Set a fixed width or use percentage */
+    box-sizing: border-box;
+    /* Include padding and border in the width */
+    background-color: white;
+    /* Add background color */
+    border-radius: 10px;
+    /* Round the corners */
+}
+
+/* Style for each list container */
+.list-container {
+    flex: 1;
+    /* Each container takes equal width */
+    /* max-width: 33%; /* Limit maximum width to prevent overflow */
+    /*padding: 30px; /* Add padding for better appearance */
+}
+
+/* Style for each scrollable list */
+.scrollable-list {
+    max-height: 100px;
+    /* Adjust the maximum height as needed */
+    overflow-y: auto;
+    /* Enable vertical scrollbar */
+    border: 1px solid #ccc;
+    /* Add border for clarity */
+    padding: 5px;
+    /* Add padding for better appearance */
+    background-color: white;
+    border-radius: 10px;
+    /* Round the corners */
+}
+
+/* Style for the list items */
+.scrollable-list li {
+    list-style: none;
+    /* Remove default list bullet */
+    margin-bottom: 5px;
+    /* Add space between items */
+    padding-left: 5px;
+    /* Remove left padding */
+}
+
+/* Flex container for side-by-side layout */
+.summary-container {
+    display: flex;
+    margin: 20px auto;
+    /* Add margin (top and bottom) and set left and right margins to auto */
+    padding: 10px;
+    /* Add padding */
+    width: 95%;
+    /* Set a fixed width or use percentage */
+    box-sizing: border-box;
+    /* Include padding and border in the width */
+    background-color: white;
+    /* Add background color */
+    border-radius: 8px;
+    /* Round the corners */
+    box-shadow: var(--shadow);
+}
+
+/* Style for each summary */
+.summary {
+    flex: 1;
+    /* Each summary takes equal width */
+    margin-right: 30px;
+    /* Add margin for spacing */
+    margin-left: 30px;
+    /* Add margin for spacing */
+}
+
+/* Style for table */
+.summary-container table,
+.summary table {
+    width: 100%;
+    /* Table takes full width of its container */
+    border-collapse: collapse;
+    /* Collapse table borders */
+    background-color: white;
+    border-radius: 10px;
+    /* Round all corners of the table */
+}
+
+/* Style for table header */
+.summary-container th,
+.summary th {
+    background-color: #f2f2f2;
+    /* Light gray background */
+    padding: 8px;
+    /* Add padding */
+    text-align: left;
+    /* Align text to left */
+}
+
+/* Style for table cells */
+.summary-container td,
+.summary td {
+    padding: 8px;
+    /* Add padding */
+    border-bottom: 1px solid #ddd;
+    /* Add bottom border */
+}
+
+/* Style for dropdown and button */
+.summary-container select,
+.summary-container button {
+    width: 100px;
+    margin-top: 5px;
+}
+
+/* Remove outer border */
+.summary-container table,
+.summary table {
+    border: none;
+}
